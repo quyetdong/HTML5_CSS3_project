@@ -2,6 +2,11 @@ import java.util.*;
 
 public class MaxMin {
 	public static void main(String[] args) {
+		System.out.println("Search for maximum number and minimum number in a sequence of three numbers.\n");
+		max_min();
+	}
+	
+	public static void max_min() {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter three numbers: ");

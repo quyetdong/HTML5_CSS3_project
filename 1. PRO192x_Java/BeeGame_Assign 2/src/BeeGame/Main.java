@@ -17,9 +17,9 @@ public class Main {
 		beeList = PlayBeeGame.attackBee(in, beeList);
 		
 		System.out.println("You've won!");
-		for(Bee bee: beeList) {
-			bee.printInfo();
-		}
+		PlayBeeGame.printBeeList(beeList);
+		
+		in.close();	
 	}
 
 }

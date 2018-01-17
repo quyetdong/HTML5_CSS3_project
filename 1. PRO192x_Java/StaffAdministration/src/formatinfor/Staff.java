@@ -4,26 +4,18 @@ package formatinfor;
  * Specify fields of a staff
  */
 
-public class Staff extends Employee {
-	private float workDays;
-	private String position;
+public class Staff extends Employee implements GetSalary{		
+	public Staff() {}
 	
-	public float getWorkDays() {
-		return workDays;
+	public Staff(String name,String section,String level,float salaryRate,float workLoad) {
+		this.setName(name);
+		this.setSection(section);
+		this.setLevel(level);
+		this.setSalaryRate(salaryRate);
+		this.setWorkLoad(workLoad);
+		this.setAllowance(level);
 	}
-
-	public void setWorkDays(float workDays) {
-		this.workDays = workDays;
-	}
-
-	public String getPosition() {
-		return position;
-	}
-
-	public void setPosition(String position) {
-		this.position = position;
-	}
-
+	
 	public void setAllowance(String position) {
 		if(position.equals("staff")) {
 			allowance = 500;			
@@ -40,6 +32,18 @@ public class Staff extends Employee {
 	}
 	
 	public float getSalary() {
-		return (getSalaryRate()*730 + getAllowance() + getWorkDays()*30); 
+		return (getSalaryRate()*730 + getAllowance() + getWorkLoad()*30); 
+	}
+	
+	public void printInfor() {
+		System.out.printf("%14s|", getName());
+		System.out.printf("%9s|", getSection());
+		System.out.printf("%7s|", getLevel());
+		System.out.printf("%21.1f|", getWorkLoad());
+		System.out.printf("%11.1f|", getSalaryRate());
+		System.out.printf("%10.1f|", getAllowance());
+		System.out.printf("%8.1f", getSalary());
+		
+		System.out.println();
 	}
 }

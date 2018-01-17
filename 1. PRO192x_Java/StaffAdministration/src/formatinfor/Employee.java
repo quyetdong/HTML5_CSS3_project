@@ -2,14 +2,30 @@ package formatinfor;
 
 /* 
  * Abstract class
- * Specify fields of a employee in general
+ * Specify fields of an employee in general
  */
 
 public abstract class Employee {
-	String name;
-	String department;
+	private String name;
+	private String section;
+	private float salaryRate;
+	private float workLoad;
+	private String level;
 	float allowance;
-	float salaryRate;
+
+	public String getLevel() {
+		return level;
+	}
+	public void setLevel(String level) {
+		this.level = level;
+	}
+		
+	public float getWorkLoad() {
+		return workLoad;
+	}
+	public void setWorkLoad(float workLoad) {
+		this.workLoad = workLoad;
+	}
 	
 	public String getName() {
 		return name;
@@ -18,11 +34,11 @@ public abstract class Employee {
 		this.name = name;
 	}
 
-	public String getDepartment() {
-		return department;
+	public String getSection() {
+		return section;
 	}
-	public void setDepartment(String department) {
-		this.department = department;
+	public void setSection(String section) {
+		this.section = section;
 	}
 
 	public float getSalaryRate() {
@@ -34,8 +50,7 @@ public abstract class Employee {
 
 	public float getAllowance() {
 		return allowance;
-	}
+	}	
 	
-	public abstract void setAllowance(String position);
-	public abstract float getSalary();
+	public abstract void setAllowance(String level);
 }

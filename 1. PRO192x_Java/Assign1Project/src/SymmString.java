@@ -2,6 +2,11 @@ import java.util.Scanner;
 
 public class SymmString {
 	public static void main(String[] args) {
+		System.out.println("Check a string is symmetrical or not\n");
+		symm_str();
+	}
+	
+	public static void symm_str() {
 		System.out.println("Input a string:");	
 		Scanner sc = new Scanner(System.in);
 		String inp_string = sc.next();

@@ -1,4 +1,4 @@
-package admininfor;
+package main;
 
 /* 
  * Interface
@@ -8,6 +8,5 @@ package admininfor;
 public interface ProceedData {
 	public void inputInfor();
 	public int searchInfor();
-	public void arrangeInfor();
 	public void printInfor();
 }

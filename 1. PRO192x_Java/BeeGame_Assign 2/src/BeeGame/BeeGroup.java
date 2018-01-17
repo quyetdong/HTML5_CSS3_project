@@ -1,23 +1,23 @@
 package BeeGame;
 
 class BeeGroup {	
-	static Bee getBee() {
+	static Bee createBee() {
 		int i = (int) (Math.random() * 3);
 		Bee a = new BQueen();
 		
 		if(i == 0) {
 			a = new BQueen();
-			a.setType("Bee Queen");
+			a.setType("Queen");
 		}
 		
 		if(i == 1) {
 			a = new BDrone();
-			a.setType("Bee Drone");
+			a.setType("Drone");
 		}
 		
 		if(i == 2) {
 			a = new BWorker();
-			a.setType("Bee Worker");
+			a.setType("Worker");
 		}
 		return a;
 	}
@@ -26,11 +26,8 @@ class BeeGroup {
 		Bee[] bGroup = new Bee[num];
 		
 		for(int i=0; i<num; i++) {
-			bGroup[i] = getBee();
-			bGroup[i].setIndex(i+1);
-			bGroup[i].printInfo();
-		}
-		
+			bGroup[i] = createBee();
+		}		
 		return bGroup;
 	}
 	
@@ -38,7 +35,7 @@ class BeeGroup {
 		boolean bLife = false;
 		
 		for(Bee bee: bees) {
-			if(bee.bLife() == "Alive") {
+			if(bee.bStatus() == "Alive") {
 				bLife = true;
 			}
 		}		

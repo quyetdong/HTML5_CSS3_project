@@ -1,5 +1,7 @@
 package main;
 
+import java.util.Scanner;
+
 /* 
  * Run program
  */
@@ -7,10 +9,19 @@ package main;
 public class Main {
 	public static void main(String[] args) {
 		AdminData employee = new AdminData();
+		Scanner sc = new Scanner(System.in);
 		
-		employee.inputInfor();
-		employee.arrangeInfor();
-		employee.printInfor();
-		employee.searchInfor();
+		while(true) {
+			employee.inputInfor();
+			employee.printInfor();
+			employee.searchInfor();
+			
+			System.out.println("Type q to quit, or anything else to continue!");
+			String next = sc.nextLine();
+			if(next.equals("q")) {
+				break;
+			}
+		}
+		sc.close();
 	}
 }

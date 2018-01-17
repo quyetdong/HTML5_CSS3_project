@@ -1,7 +1,7 @@
 package BeeGame;
 
 class BWorker extends Bee {
-	String bLife() {
+	String bStatus() {
 		if(getHealth() < 70) {
 			return "Death";
 		}

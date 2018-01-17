@@ -1,7 +1,7 @@
 package BeeGame;
 
 class BDrone extends Bee {
-	String bLife() {
+	String bStatus() {
 		if(getHealth() < 50) {
 			return "Death";
 		}

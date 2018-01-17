@@ -2,16 +2,21 @@ import java.util.*;
 
 public class NumbersArray {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		
+		System.out.println("Search for maximum number in an array\n");
+		numbers_array();
+	}
+	
+	public static void numbers_array() {
 		//get an array of ten integers
+		Scanner sc = new Scanner(System.in);
 		int size = 10;
+		System.out.println("Input a sequence of ten integers.");
 		int[] numbers = input_number_array(sc, size);
 		sc.close();
 		
-		//search and print maximum value in the array
+		//search and print out maximum value in the array
 		int max_num = max_num(numbers);
-		System.out.printf("%d\n", max_num);
+		System.out.printf("The maximum number is: %d\n", max_num);
 	}
 	
 	public static int[] input_number_array(Scanner sc, int size) {
