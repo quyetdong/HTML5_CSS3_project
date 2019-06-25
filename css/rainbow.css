@@ -1,0 +1,164 @@
+.container-rainbow {
+  animation-name: rainbow;
+  animation-duration: 3s;
+  width: 550px;
+  height: 120px;
+  position: absolute;
+  left: 25px;
+  top: 50px;
+}
+
+.rainbow {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  height: 120px;
+}
+
+#rainbow1 {
+  animation-name: rainbow1;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+#rainbow2 {
+  animation-name: rainbow2;
+  animation-duration: 3s;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+#rainbow3 {
+  animation-name: rainbow3;
+  animation-duration: 3s;
+  animation-delay: 9s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+#rainbow4 {
+  animation-name: rainbow4;
+  animation-duration: 3s;
+  animation-delay: 12s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+#rainbow5 {
+  animation-name: rainbow5;
+  animation-duration: 3s;
+  animation-delay: 15s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+#rainbow6 {
+  animation-name: rainbow6;
+  animation-duration: 3s;
+  animation-delay: 18s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+#rainbow7 {
+  animation-name: rainbow7;
+  animation-duration: 3s;
+  animation-delay: 21s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes rainbow {
+  0% {
+    background-color: #f1f0ea;
+  }
+  100% {
+    background-color: rgb(203, 239, 255);
+    opacity: 0.5;
+  }
+}
+
+@keyframes rainbow1 {
+  0% {
+    background-color: #f1f0ea;
+    left: 20px;
+  }
+  100% {
+    background-color: #3DBAF1;
+    left: 60px;
+  }
+}
+
+@keyframes rainbow2 {
+  0% {
+    background-color: #3DBAF1;
+    left: 20px;
+  }
+  100% {
+    background-color: #00EACF;
+    left: 55px;
+  }
+}
+
+@keyframes rainbow3 {
+  0% {
+    background-color: #00EACF;
+    left: 20px;
+  }
+  100% {
+    background-color: #2541B2;
+    left: 50px;
+  }
+}
+
+@keyframes rainbow4 {
+  0% {
+    background-color: #2541B2;
+    left: 20px;
+  }
+  100% {
+    background-color: #03256C;
+    left: 45px;
+  }
+}
+
+@keyframes rainbow5 {
+  0% {
+    background-color: #03256C;
+    left: 20px;
+  }
+  100% {
+    background-color: #7768AE;
+    left: 40px;
+  }
+}
+
+@keyframes rainbow6 {
+  0% {
+    background-color: #7768AE;
+    left: 20px;
+  }
+  100% {
+    background-color: #5035FF;
+    left: 35px;
+  }
+}
+
+@keyframes rainbow7 {
+  0% {
+    background-color: #5035FF;
+    left: 20px;
+  }
+  100% {
+    background-color: #2541B2;
+    left: 30px;
+  }
+  /* 100% {
+    background-color: #6DB1FF;
+    left: 24px;
+  } */
+}
